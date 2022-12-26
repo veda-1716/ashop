@@ -200,9 +200,8 @@
                             <a href="{{ route('privacy') }}">PRIVACY POLICY</a>
                         </li>
                     </ul>
-                    <p class="copyright-text">Copyright &copy; 2021, Front-End by <a
-                            href="https://themefisher.com/">Themefisher</a> Back-End By
-                        <a href="https://github.com/tauseedzaman">Tauseed Zaman</a>
+                    <p class="copyright-text">Copyright &copy; 2022, Front-End and Back-End By
+                        <a href="https://github.com/veda-1716">Veda Dhanush</a>
                     </p>
                 </div>
             </div>
