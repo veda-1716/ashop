@@ -88,8 +88,7 @@
                 <div class="col-md-12 text-center">
                     <div class="title">
                         <h2>SUBSCRIBE TO NEWSLETTER</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, <br> facilis numquam impedit ut
-                            sequi. Minus facilis vitae excepturi sit laboriosam.</p>
+                        <p>Please subscribe to our newsletter <br> to get information about our latest products and images, thank you.</p>
                     </div>
                     @livewire('subscribe')
                 </div>

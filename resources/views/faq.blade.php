@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2>{{ __("Frequently Asked Questions") }}</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, repudiandae.</p>
+                    <p>Here are the most Frequently Asked Questions.</p>
                     <p>{{ env('MY_EMAIL') }}</p>
                 </div>
                 <div class="col-md-8">

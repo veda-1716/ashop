@@ -10,7 +10,7 @@
                     <div class="block text-center">
                         <i class="tf-ion-android-checkmark-circle"></i>
                         <h2 class="text-center">{{ __('Thank you! For your payment') }}</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, sed.</p>
+                        <p>Thank you for confirming your order, your order is in it's way.</p>
                         <a href="shop.html" class="btn btn-main mt-20">Continue Shopping</a>
                     </div>
                 </div>
