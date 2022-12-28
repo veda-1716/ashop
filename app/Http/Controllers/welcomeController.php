@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\category;
 use App\Models\faq;
 use App\Models\product;
+use App\Http\Livewire\Products;
 use App\Models\aboutUs;
 use Illuminate\Http\Request;
 

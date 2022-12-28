@@ -7,7 +7,7 @@ Route::get('/', [\App\Http\Controllers\welcomeController::class,'welcome'] );
 Route::get('/search/{item}',[\App\Http\Controllers\welcomeController::class,'show_searched_items'])->name('show_searched_items');
 Route::get('/category/{id}',[\App\Http\Controllers\welcomeController::class,'show_searched_item_by_category'])->name('show_searched_item_by_category');
 Route::get('/product/{name}',[\App\Http\Controllers\welcomeController::class,'show_searched_item_by_name'])->name('show_searched_item_by_name');
-Route::get('/show_product/{id}',[\App\Http\Controllers\welcomeController::class,'show_single_product'])->name('single_product');
+Route::get('/show_product/{id}',[\App\Http\Controllers\welcomeController::class,'show_single_product'])->name('show_single_product');
 
 Route::view('/thankYou','confirmation')->name('thanks_for_shoping');
 Route::view('/addresses','addresses')->name('addresses');
