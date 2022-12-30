@@ -15,19 +15,19 @@
                         <ul class="contact-short-info">
                             <li>
                                 <i class="tf-ion-ios-home"></i>
-                                <span>{{ env('MY_ADDRESS') }}</span>
+                                <span> London, United Kingdom </span>
                             </li>
                             <li>
                                 <i class="tf-ion-android-phone-portrait"></i>
-                                <span>Phone: {{ env('MY_PHONE_NUMBER') }}</span>
+                                <span>Phone: 9573679970 </span>
                             </li>
                             <li>
                                 <i class="tf-ion-android-globe"></i>
-                                <span>Fax: {{ env('MY_FAX') }}</span>
+                                <span>Fax: +0165897842</span>
                             </li>
                             <li>
                                 <i class="tf-ion-android-mail"></i>
-                                <span>Email: {{ env('MY_EMAIL') }}</span>
+                                <span>Email: ashop@gmail.com </span>
                             </li>
                         </ul>
                         <!-- Footer Social Links -->
