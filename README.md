@@ -1,4 +1,7 @@
 
+## Ashop 
+
+Ashop is e-commerse based web application build with laravel by [Veda Dhanush M](https://github.com/veda-1716).
 
 
 - **Clone/Download the repo**
@@ -13,5 +16,5 @@
 
 ## License
 
-The ashop is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Ashop is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
