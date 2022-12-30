@@ -1,8 +1,7 @@
 
-## Zshop 
+## Ashop 
 
-Zshop is e-commerse based web application build with **laravel** by [Tauseed Zaman](https://github.com/tauseedzaman).
-### How to Install Zshop 
+How to use Ashop 
 
 - **Clone/Download the repo**
 - **composer install**
@@ -16,5 +15,5 @@ Zshop is e-commerse based web application build with **laravel** by [Tauseed Zam
 
 ## License
 
-The Zshop is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Ashop is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
