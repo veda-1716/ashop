@@ -1,3 +1,4 @@
+
 <div id="layoutSidenav_content">
     <main class="bg-light">
         <div class="container-fluid px-4 ">
@@ -46,3 +47,6 @@
                     {{ $subscriberss->links() }}
                 </div>
             </div>
+        </div>
+    </main>
+</div>

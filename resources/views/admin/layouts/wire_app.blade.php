@@ -11,10 +11,11 @@
     <link href="{{ asset('AdminArea/css/styles.css') }}" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     @livewireStyles
-    @livewireScripts
+
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <livewire:Category />
 
         <!-- Navbar-->
         <a class="navbar-brand ps-3" href="{{ route('admin.dashboard') }}">{{ config('app.name') }}</a>
@@ -62,6 +63,7 @@
     <script src="{{ asset('AdminArea/assets/demo/chart-bar-demo.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
     <script src="{{ asset('AdminArea/js/datatables-simple-demo.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>

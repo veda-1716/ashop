@@ -12,7 +12,7 @@
     <link href="{{ asset('AdminArea/css/styles.css') }}" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     @livewireStyles
-    @livewireScripts
+
 </head>
 
 <body class="sb-nav-fixed">
@@ -48,6 +48,7 @@
     <script src="{{ asset('AdminArea/js/scripts.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
     <script src="{{ asset('AdminArea/js/datatables-simple-demo.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>

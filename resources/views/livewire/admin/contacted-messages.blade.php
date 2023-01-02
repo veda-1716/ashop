@@ -1,3 +1,4 @@
+
 <div id="layoutSidenav_content">
     <main class="bg-light">
         <div class="container-fluid px-4 py-4">
@@ -65,3 +66,6 @@
                     {{ $clients->links() }}
                 </div>
             </div>
+        </div>
+    </main>
+</div>
