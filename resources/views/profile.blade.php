@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-
-<section class="user-dashboard  page-wrapper">
+<div>
+ <section class="user-dashboard  page-wrapper">
     <div class="container">
         <div class="row">
             @include('user_menu')
@@ -14,6 +14,6 @@
             </div>
         </div>
     </div>
-</section>    
-
+ </section>
+</div>
 @endsection

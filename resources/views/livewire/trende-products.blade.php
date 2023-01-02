@@ -21,6 +21,6 @@
             </div>
         </div>
     </div>
-@empty
+ @empty
     <h1>{{ __('no product found!') }}</h1>
 @endforelse

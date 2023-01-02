@@ -15,7 +15,7 @@
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <livewire:Category />
+
 
         <!-- Navbar-->
         <a class="navbar-brand ps-3" href="{{ route('admin.dashboard') }}">{{ config('app.name') }}</a>

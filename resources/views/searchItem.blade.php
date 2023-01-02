@@ -6,7 +6,7 @@
                 <div class="title text-center">
                     <h2 class="border shadow padding" style="color: green;border-bottom:1px solid lightgreen"> Result for
                         <span style="color: blue; background-color:cyan">{{ $searchedItem }}</span>
-                        ({{ $products->count() . ') Items Found' }}</h2>
+                        {{ $products->count() . (' Items Found')  }}</h2>
                 </div>
             </div>
             <div class="row">
@@ -24,13 +24,13 @@
                                                 <i class="tf-ion-ios-search-strong"></i>
                                             </a>
                                         </li>
-                                    @livewire('product-menu-like',['kid' => $product->id])
-                                    @livewire('product-menu-cart',['cid' => $product->id])
+                                        @livewire('product-menu-like',['kid' => $product->id])
+                                        @livewire('product-menu-cart',['cid' => $product->id])
                                     </ul>
                                 </div>
                             </div>
                             <div class="product-content">
-                                <h4><a href="{{ route('single_product', $product->id) }}">{{ $product->name }}</a></h4>
+                                <h4><a href="{{ route('show_product', $product->id) }}">{{ $product->name }}</a></h4>
                                 <p class="price">${{ $product->price }}</p>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+<div>
     <section class="page-header">
         <div class="container">
             <div class="row">
@@ -99,5 +99,5 @@
             </div> <!-- End row -->
         </div> <!-- End container -->
     </section> <!-- End section -->
-
+</div>
 @endsection

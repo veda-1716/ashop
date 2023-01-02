@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
+<div>
     <div class="hero-slider">
-        <div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-1.jpg);">
+      <div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-1.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 text-center">
@@ -14,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-3.jpg);">
+          <div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-3.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 text-left">
@@ -95,5 +96,5 @@
             </div> <!-- End row -->
         </div> <!-- End container -->
     </section> <!-- End section -->
-
+</div>
 @endsection

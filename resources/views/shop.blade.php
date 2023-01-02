@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+ <div>
     <section class="page-header">
         <div class="container">
             <div class="row">
@@ -23,7 +23,7 @@
             @livewire('products')
         </div>
     </section>
-
+ </div>
 
 
 @endsection

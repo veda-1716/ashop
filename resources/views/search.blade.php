@@ -6,7 +6,7 @@
                 <div class="title text-center">
                     <h2 class="border shadow padding" style="color: green;border-bottom:1px solid lightgreen"> Result for
                         <span style="color: blue; background-color:cyan">{{ $category->name }}</span>
-                        ({{ $category->products->count() . ') Items Found' }}</h2>
+                        {{ $category->products->count() . (' Items Found') }}</h2>
                 </div>
             </div>
             <div class="row">
