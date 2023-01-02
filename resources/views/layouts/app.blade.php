@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     @livewireStyles
-    @livewireScripts
+
 </head>
 
 <body id="body">
@@ -217,7 +217,7 @@
     <script src="{{ asset('plugins/slick/slick.min.js') }}"></script>
     <script src="{{ asset('plugins/slick/slick-animation.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
-
+    @livewireScripts
 </body>
 
 </html>

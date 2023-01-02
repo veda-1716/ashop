@@ -31,7 +31,6 @@ class ContactUs extends Component
         $this->email="";
         $this->name="";
         $this->subject="";
-        $this->subject="";
         $this->message="";
 
         session()->flash('success', '');
