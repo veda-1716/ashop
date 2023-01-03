@@ -79,18 +79,20 @@
                                     </tr>
                                 @endforeach
 
-                                {{-- <tr class="">
-                                <td>
-                                    <h1 class="text-success">the user ordered these product</h1>
-                                </td>
-                            </tr>
+                                <tr class="">
+                                    <td>
+                                        <h1 class="text-success">the user ordered these product</h1>
+                                    </td>
+                                </tr>
 
-                            @foreach ($orderedProducts as $product)
-                            <tr>
-                                <td> <span class="bg-warning p-1 rounded">Cart</span>  Product id</td>
-                                <td><a class="nav-link" title="show this product" href="{{ route('single_product',$product->product_id) }}">{{ $product->product_id }}</a></td>
-                            </tr>
-                            @endforeach --}}
+                                @foreach ($orderedProducts as $product)
+                                    <tr>
+                                        <td> <span class="bg-warning p-1 rounded">Cart</span> Product id</td>
+                                        <td><a class="nav-link" title="show this product"
+                                                href="{{ route('single_product', $product->product_id) }}">{{ $product->product_id }}</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
 
                             </tbody>
                         </table>

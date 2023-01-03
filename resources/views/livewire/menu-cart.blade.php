@@ -1,3 +1,4 @@
+@extends('layouts.app')
 @forelse ($products as $product)
     <div class="media" {{ $total_price = $total_price + $product->product->price }}>
         <a class="pull-left" href="">
@@ -13,8 +14,7 @@
             </div>
             <h5><strong>${{ $product->product->price }}</strong></h5>
         </div>
-        <span wire:click="delete({{ $product->id }})" class="remove"><i
-                class="tf-ion-close"></i></span>
+        <span wire:click="delete({{ $product->id }})" class="remove"><i class="tf-ion-close"></i></span>
     </div>
 @empty
     <p class="text-info">No Product Found!</p>

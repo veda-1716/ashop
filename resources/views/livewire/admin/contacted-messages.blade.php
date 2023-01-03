@@ -1,4 +1,4 @@
-
+@extends('admin.layouts.app')
 <div id="layoutSidenav_content">
     <main class="bg-light">
         <div class="container-fluid px-4 py-4">
@@ -15,20 +15,21 @@
 
             <div class="row mt-4 shadow rounded p-3">
                 <div class="col mx-auto">
-                    <h2 class="text-success rounded text-center shadow p-3 bg-info text-light border border-success">{{ __("
-                        Messages") }}</h2>
+                    <h2 class="text-success rounded text-center shadow p-3 bg-info text-light border border-success">
+                        {{ __("
+                                                Messages") }}</h2>
                     <input type="search" class="form-control " wire:model="search" name="search" id="search"
                         placeholder="search for customer by name ">
                     <table class="table table-all table-hoverable">
                         <thead>
                             <tr>
                                 <th style="width: 10px">#</th>
-                                <th>{{ __("Name") }}</th>
-                                <th>{{ __("Email") }}</th>
-                                <th>{{ __("Subject") }}</th>
-                                <th>{{ __("Message") }}</th>
-                                <th>{{ __("Created_at") }}</th>
-                                <th>{{ __("Actions") }}</th>
+                                <th>{{ __('Name') }}</th>
+                                <th>{{ __('Email') }}</th>
+                                <th>{{ __('Subject') }}</th>
+                                <th>{{ __('Message') }}</th>
+                                <th>{{ __('Created_at') }}</th>
+                                <th>{{ __('Actions') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,7 +47,7 @@
                                         <div class="btn-group">
                                             <button class="btn btn-sm btn-danger" title="delete this row"
                                                 onclick="return confirm('{{ __('Are You Sure ?') }}')"
-                                                wire:click="delete({{ $client->id }})" >{{ __("Delete") }}</button>
+                                                wire:click="delete({{ $client->id }})">{{ __('Delete') }}</button>
                                         </div>
                                     </td>
                                 </tr>

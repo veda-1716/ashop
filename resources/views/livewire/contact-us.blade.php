@@ -1,9 +1,8 @@
 <div class="contact-form col-md-6 ">
     @if (session()->has('success'))
         <div id="mail-success" class="alert alert-success">
-            <p class="text-primary text-capitalize">{{ __("Thank you For Contacting us") }}. </p>
+            <p class="text-primary text-capitalize">{{ __('Thank you For Contacting us') }}. </p>
         </div>
-
     @endif
     <form id="contact-form" wire:submit.prevent="add_contact_us_request" role="form">
 

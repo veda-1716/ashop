@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
-
     <section class="signin-page account">
         <div class="container">
             <div class="row">
@@ -15,37 +13,45 @@
                         <form class="text-left clearfix" method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="form-group">
-                                <input type="text" class="form-control"  placeholder="Full Name" class="@error('full_name') is-invalid @enderror" name="full_name" value="{{ old('full_name') }}" required autocomplete="full_name" autofocus>
+                                <input type="text" class="form-control" placeholder="Full Name"
+                                    class="@error('full_name') is-invalid @enderror" name="full_name"
+                                    value="{{ old('full_name') }}" required autocomplete="full_name" autofocus>
 
-                                    @error('full_name')
+                                @error('full_name')
                                     <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control"  placeholder="Username" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
+                                <input type="text" class="form-control" placeholder="Username"
+                                    class="@error('username') is-invalid @enderror" name="username"
+                                    value="{{ old('username') }}" required autocomplete="username" autofocus>
 
                                 @error('username')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control"  placeholder="Email" classs="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input type="email" class="form-control" placeholder="Email"
+                                    classs="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"
+                                    required autocomplete="email">
 
                                 @error('email')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control"  max="90000000000"  placeholder="Phone" class="@error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
+                                <input type="number" class="form-control" max="90000000000" placeholder="Phone"
+                                    class="@error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}"
+                                    required autocomplete="phone" autofocus>
 
                                 @error('phone')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -103,7 +109,8 @@
                                     <option value="Colombia">Colombia</option>
                                     <option value="Comoros">Comoros</option>
                                     <option value="Congo">Congo</option>
-                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of
+                                        The</option>
                                     <option value="Cook Islands">Cook Islands</option>
                                     <option value="Costa Rica">Costa Rica</option>
                                     <option value="Cote D'ivoire">Cote D'ivoire</option>
@@ -147,7 +154,8 @@
                                     <option value="Guinea-bissau">Guinea-bissau</option>
                                     <option value="Guyana">Guyana</option>
                                     <option value="Haiti">Haiti</option>
-                                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands
+                                    </option>
                                     <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
                                     <option value="Honduras">Honduras</option>
                                     <option value="Hong Kong">Hong Kong</option>
@@ -168,11 +176,13 @@
                                     <option value="Kazakhstan">Kazakhstan</option>
                                     <option value="Kenya">Kenya</option>
                                     <option value="Kiribati">Kiribati</option>
-                                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's
+                                        Republic of</option>
                                     <option value="Korea, Republic of">Korea, Republic of</option>
                                     <option value="Kuwait">Kuwait</option>
                                     <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic
+                                    </option>
                                     <option value="Latvia">Latvia</option>
                                     <option value="Lebanon">Lebanon</option>
                                     <option value="Lesotho">Lesotho</option>
@@ -182,7 +192,8 @@
                                     <option value="Lithuania">Lithuania</option>
                                     <option value="Luxembourg">Luxembourg</option>
                                     <option value="Macao">Macao</option>
-                                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former
+                                        Yugoslav Republic of</option>
                                     <option value="Madagascar">Madagascar</option>
                                     <option value="Malawi">Malawi</option>
                                     <option value="Malaysia">Malaysia</option>
@@ -195,7 +206,8 @@
                                     <option value="Mauritius">Mauritius</option>
                                     <option value="Mayotte">Mayotte</option>
                                     <option value="Mexico">Mexico</option>
-                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of
+                                    </option>
                                     <option value="Moldova, Republic of">Moldova, Republic of</option>
                                     <option value="Monaco">Monaco</option>
                                     <option value="Mongolia">Mongolia</option>
@@ -240,7 +252,8 @@
                                     <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
                                     <option value="Saint Lucia">Saint Lucia</option>
                                     <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines
+                                    </option>
                                     <option value="Samoa">Samoa</option>
                                     <option value="San Marino">San Marino</option>
                                     <option value="Sao Tome and Principe">Sao Tome and Principe</option>
@@ -255,7 +268,8 @@
                                     <option value="Solomon Islands">Solomon Islands</option>
                                     <option value="Somalia">Somalia</option>
                                     <option value="South Africa">South Africa</option>
-                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The
+                                        South Sandwich Islands</option>
                                     <option value="Spain">Spain</option>
                                     <option value="Sri Lanka">Sri Lanka</option>
                                     <option value="Sudan">Sudan</option>
@@ -284,7 +298,8 @@
                                     <option value="United Arab Emirates">United Arab Emirates</option>
                                     <option value="United Kingdom">United Kingdom</option>
                                     <option value="United States">United States</option>
-                                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                    <option value="United States Minor Outlying Islands">United States Minor Outlying
+                                        Islands</option>
                                     <option value="Uruguay">Uruguay</option>
                                     <option value="Uzbekistan">Uzbekistan</option>
                                     <option value="Vanuatu">Vanuatu</option>
@@ -299,41 +314,51 @@
                                     <option value="Zimbabwe">Zimbabwe</option>
                                 </select>
                                 @error('country')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control"  placeholder="Billing address" class="@error('billing_address') is-invalid @enderror" name="billing_address" value="{{ old('billing_address') }}" required autocomplete="billing_address" autofocus>
+                                <input type="text" class="form-control" placeholder="Billing address"
+                                    class="@error('billing_address') is-invalid @enderror" name="billing_address"
+                                    value="{{ old('billing_address') }}" required autocomplete="billing_address"
+                                    autofocus>
 
                                 @error('billing_address')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control"  placeholder="Default shipping address" class="@error('default_shipping_address') is-invalid @enderror" name="default_shipping_address" value="{{ old('default_shipping_address') }}" required autocomplete="billing_address" autofocus>
+                                <input type="text" class="form-control" placeholder="Default shipping address"
+                                    class="@error('default_shipping_address') is-invalid @enderror"
+                                    name="default_shipping_address" value="{{ old('default_shipping_address') }}"
+                                    required autocomplete="billing_address" autofocus>
 
                                 @error('default_shipping_address')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
 
                             <div class="form-group">
-                                <input type="password" class="form-control"  placeholder="Password"  class="@error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <input type="password" class="form-control" placeholder="Password"
+                                    class="@error('password') is-invalid @enderror" name="password" required
+                                    autocomplete="new-password">
 
                                 @error('password')
-                                <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                    <input id="password-confirm" placeholder="Confirm Password" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" placeholder="Confirm Password" type="password"
+                                    class="form-control" name="password_confirmation" required
+                                    autocomplete="new-password">
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-main text-center">Sign In</button>
