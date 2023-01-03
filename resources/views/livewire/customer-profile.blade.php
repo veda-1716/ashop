@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <div class="media ">
     <div class="pull-left text-center" href="#!">
         <img class="media-object user-img"

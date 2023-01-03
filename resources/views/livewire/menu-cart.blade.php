@@ -1,3 +1,4 @@
+@extends('layouts.app')
 @forelse ($products as $product)
     <div class="media" {{ $total_price = $total_price + $product->product->price }}>
         <a class="pull-left" href="">

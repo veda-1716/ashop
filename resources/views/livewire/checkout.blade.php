@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <div class="page-wrapper">
     <div class="checkout shopping">
         <div class="container">
@@ -134,4 +135,7 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 40da7fbf7d9900adbaea14c4772e8a7393be94d9

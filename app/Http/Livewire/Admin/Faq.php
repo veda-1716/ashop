@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Livewire\Admin;
+
 use Livewire\WithPagination;
 use App\Models\faq as faqModel;
 use Livewire\Component;
@@ -22,8 +23,7 @@ class Faq extends Component
         if ($this->edit_faq_id) {
 
             $this->update($this->edit_faq_id);
-
-        }else{
+        } else {
 
             $this->validate([
                 'question' => 'required',
@@ -36,12 +36,11 @@ class Faq extends Component
 
             ]);
 
-            $this->question="";
-            $this->answer="";
+            $this->question = "";
+            $this->answer = "";
 
             session()->flash('message', 'FAQ Created successfully.');
         }
-
     }
 
 
@@ -56,7 +55,7 @@ class Faq extends Component
         $this->question = $faq->question;
         $this->answer = $faq->answer;
 
-        $this->button_text="Update FAQ";
+        $this->button_text = "Update FAQ";
     }
 
 
@@ -75,13 +74,12 @@ class Faq extends Component
         $faq->answer = $this->answer;
         $faq->save();
 
-        $this->question="";
-        $this->answer="";
-        $this->edit_faq_id="";
+        $this->question = "";
+        $this->answer = "";
+        $this->edit_faq_id = "";
         session()->flash('message', 'FAQ Updated Successfully.');
 
         $this->button_text = "Create FAQ";
-
     }
 
     public function delete($id)
@@ -89,13 +87,13 @@ class Faq extends Component
         faqModel::findOrFail($id)->delete();
         session()->flash('message', 'FAQ Deleted Successfully.');
 
-        $this->question="";
-        $this->answer="";
+        $this->question = "";
+        $this->answer = "";
     }
 
     public function render()
     {
-        return view('livewire.admin.faq',[
+        return view('livewire.admin.faq', [
             'faqs' => faqModel::latest()->paginate(30)
         ])->layout('admin.layouts.wire_app');
     }

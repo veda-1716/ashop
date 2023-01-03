@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('admin.layouts.app')
+=======
+@extends('layouts.app')
+>>>>>>> 40da7fbf7d9900adbaea14c4772e8a7393be94d9
 @forelse ($products as $product)
     <div class="col-md-4">
         <div class="product-item">

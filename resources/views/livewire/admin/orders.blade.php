@@ -45,6 +45,7 @@
                                     @endforeach
                                     <td><span class="bg-info p-1 ">{{ $order->order_status }}</span></td>
                                     <td>{{ $order->created_at->format('d-m-y') }}</td>
+<<<<<<< HEAD
                                     <td>
                                         <div class="btn-group">
                                             <select name="status" wre:model="status" id="">
@@ -58,6 +59,11 @@
                                                 wire:click="delete({{ $order->id }})">Delete</button>
                                         </div>
                                     </td>
+=======
+                                    <button class="btn btn-sm btn-danger" title="delete this row"
+                                        onclick="return confirm('{{ __('Are You Sure ?') }}')"
+                                        wire:click="delete({{ $order->id }})">Delete</button>
+>>>>>>> 40da7fbf7d9900adbaea14c4772e8a7393be94d9
                                 </tr>
                             @empty
                                 <tr>
@@ -73,6 +79,7 @@
                             @endforelse
                         </tbody>
                     </table>
+
                     {{ $orders->links() }}
                 </div>
             </div>

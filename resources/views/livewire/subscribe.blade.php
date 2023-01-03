@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <div class="col-lg-6 col-md-offset-3">
     @if (session()->has('message'))
         <div class="alert alert-success">
