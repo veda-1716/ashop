@@ -91,7 +91,7 @@
                             @forelse ($products as $product)
                                 <div class="media product-card"
                                     {{ $total_price = $total_price + $product->product->price }}>
-                                    <a class="pull-left" href="{{ route('single_product', $product->product->id) }}">
+                                    <a class="pull-left" href="{{ route('show_single_product', $product->product->id) }}">
                                         <img class="media-object"
                                             src="{{ config('app.url') . $product->product->thumbnail }}" alt="Image" />
                                     </a>
