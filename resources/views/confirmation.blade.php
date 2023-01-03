@@ -1,7 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
-
     <!-- Page Wrapper -->
     <section class="page-wrapper success-msg">
         <div class="container">

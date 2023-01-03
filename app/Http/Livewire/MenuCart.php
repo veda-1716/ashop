@@ -11,7 +11,7 @@ class MenuCart extends Component
     public function delete($id)
     {
         cart::find($id)->delete();
-            return $this->products = cart::where('user_id',auth()->id())->get();
+            return $this->product = cart::where('user_id',auth()->id())->get();
     }
         public function render()
         {

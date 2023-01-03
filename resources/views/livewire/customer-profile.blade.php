@@ -1,12 +1,14 @@
 <div class="media ">
     <div class="pull-left text-center" href="#!">
-        <img class="media-object user-img" src="{{  (auth()->user()->photo ? config('app.url').auth()->user()->photo : 'images/avater.jpg')}}" alt="Image">
+        <img class="media-object user-img"
+            src="{{ auth()->user()->photo ? config('app.url') . auth()->user()->photo : 'images/avater.jpg' }}"
+            alt="Image">
         <input type="file" name="" wire:model="photo" id="" class="form-control">
         @if (session()->has('message'))
-        <div class="alert alert-success">
-            {{ session('message') }}
-        </div>
-    @endif
+            <div class="alert alert-success">
+                {{ session('message') }}
+            </div>
+        @endif
     </div>
     <div class="media-body">
         <ul class="user-profile-list">

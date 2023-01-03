@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Livewire;
+
 use App\Models\cart as cartModel;
 use Livewire\Component;
+use App\Models\product;
 
 class Cart extends Component
 {
@@ -12,12 +14,12 @@ class Cart extends Component
     {
         dd("you are here");
         cartModel::find($id)->delete();
-        $this->products = cartModel::where('user_id',auth()->id())->get();
+
     }
     public function render()
     {
-        return view('livewire.cart',[
-            'products' => cartModel::where('user_id',auth()->id())->get()
-        ])->layout('');
+        return view('livewire.cart', [
+            'products' => cartModel::where('user_id', auth()->id())->get()
+        ]);
     }
 }

@@ -4,8 +4,8 @@
     <ul class="dropdown-menu search-dropdown">
         <li>
             <form wire:submit.prevent="searchBar">
-                <input type="search" name="item" wire:model="search" class="form-control"
-                    placeholder="Search..."></form>
+                <input type="search" name="item" wire:model="search" class="form-control" placeholder="Search...">
+            </form>
         </li>
     </ul>
 </li><!-- / Search -->

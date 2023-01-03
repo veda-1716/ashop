@@ -1,3 +1,4 @@
+@extends('admin.layouts.app')
 @forelse ($products as $product)
     <div class="col-md-4">
         <div class="product-item">
@@ -10,8 +11,8 @@
                                 <i class="tf-ion-ios-search-strong"></i>
                             </a>
                         </li>
-                        @livewire('product-menu-like', ['kid' =>$product->id ])
-                        @livewire('product-menu-cart', ['cid' =>$product->id ])
+                        @livewire('product-menu-like', ['kid' => $product->id])
+                        @livewire('product-menu-cart', ['cid' => $product->id])
                     </ul>
                 </div>
             </div>

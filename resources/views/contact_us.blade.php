@@ -37,20 +37,16 @@
                                             class="tf-ion-social-facebook"></i></a></li>
                                 <li><a href="{{ env('MY_TWITTER') }}"><i class="tf-ion-social-twitter"></i></a>
                                 </li>
-                                <li><a href="{{ env('MY_GOOGLEPLUS') }}"><i class="tf-ion-social-googleplus-outline"></i></a>
+                                <li><a href="{{ env('MY_GOOGLEPLUS') }}"><i
+                                            class="tf-ion-social-googleplus-outline"></i></a>
                                 </li>
                             </ul>
                         </div>
                         <!--/. End Footer Social Links -->
                     </div>
                     <!-- / End Contact Details -->
-
-
-
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </div>
     </section>
-
-
 @endsection

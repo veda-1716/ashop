@@ -13,8 +13,7 @@
             </div>
             <h5><strong>${{ $product->product->price }}</strong></h5>
         </div>
-        <span wire:click="delete({{ $product->id }})" class="remove"><i
-                class="tf-ion-close"></i></span>
+        <span wire:click="delete({{ $product->id }})" class="remove"><i class="tf-ion-close"></i></span>
     </div>
 @empty
     <p class="text-info">No Product Found!</p>

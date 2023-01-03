@@ -2,7 +2,8 @@
     <div class="col-md-4">
         <div class="product-item">
             <div class="product-thumb">
-                <img class="img-responsive" src="{{ config('app.url') . $trende->product->thumbnail }}" alt="product-img" />
+                <img class="img-responsive" src="{{ config('app.url') . $trende->product->thumbnail }}"
+                    alt="product-img" />
                 <div class="preview-meta">
                     <ul>
                         <li>
@@ -10,8 +11,8 @@
                                 <i class="tf-ion-ios-search-strong"></i>
                             </a>
                         </li>
-                        @livewire('product-menu-like', ['kid' =>$trende->product_id ])
-                        @livewire('product-menu-cart', ['cid' =>$trende->product_id ])
+                        @livewire('product-menu-like', ['kid' => $trende->product_id])
+                        @livewire('product-menu-cart', ['cid' => $trende->product_id])
                     </ul>
                 </div>
             </div>
@@ -21,6 +22,6 @@
             </div>
         </div>
     </div>
- @empty
+@empty
     <h1>{{ __('no product found!') }}</h1>
 @endforelse

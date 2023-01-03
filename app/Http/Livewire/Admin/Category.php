@@ -13,8 +13,8 @@ use Livewire\WithFileUploads;
 class Category extends Component
 {
     use WithFileUploads;
-        use WithPagination;
-        protected $paginationTheme = 'bootstrap';
+    use WithPagination;
+    protected $paginationTheme = 'bootstrap';
     public $name;
     public $description;
     public $thumbnail;
@@ -29,8 +29,7 @@ class Category extends Component
         if ($this->edit_thumbnail) {
 
             $this->update($this->edit_category_id);
-
-        }else{
+        } else {
 
             $this->validate([
                 'name' => 'required|min:4|max:50',
@@ -45,13 +44,12 @@ class Category extends Component
 
             ]);
 
-            $this->name="";
-            $this->description="";
-            $this->thumbnail="";
+            $this->name = "";
+            $this->description = "";
+            $this->thumbnail = "";
 
             session()->flash('message', 'Category Created successfully.');
         }
-
     }
 
     public function storeImage($thumbnail)
@@ -62,7 +60,7 @@ class Category extends Component
         $image   = ImageManagerStatic::make($thumbnail)->encode('jpg');
         $name  = Str::random() . '.jpg';
         Storage::disk('public')->put($name, $image);
-        return 'storage/'.$name;
+        return 'storage/' . $name;
     }
 
 
@@ -78,7 +76,7 @@ class Category extends Component
         $this->description = $category->description;
         $this->edit_thumbnail    = $category->thumbnail;
 
-        $this->button_text="Update Categroy";
+        $this->button_text = "Update Categroy";
     }
 
 
@@ -100,7 +98,7 @@ class Category extends Component
                 'thumbnail' => 'image',
             ]);
 
-            if($category->thumbnail){
+            if ($category->thumbnail) {
                 unlink($category->thumbnail);
             }
 
@@ -108,34 +106,33 @@ class Category extends Component
         }
         $category->save();
 
-        $this->name="";
-        $this->description="";
-        $this->thumbnail="";
-        $this->edit_thumbnail="";
-        $this->edit_category_id="";
+        $this->name = "";
+        $this->description = "";
+        $this->thumbnail = "";
+        $this->edit_thumbnail = "";
+        $this->edit_category_id = "";
         session()->flash('message', 'Cateogry Updated Successfully.');
 
         $this->button_text = "Create Categroy";
-
     }
 
     public function delete($id)
     {
         $category = \App\Models\category::findOrFail($id);
-        if($category->thumbnail){
+        if ($category->thumbnail) {
             unlink($category->thumbnail);
         }
         $category->delete();
         session()->flash('message', 'Category Deleted Successfully.');
 
-        $this->name="";
-        $this->description="";
-        $this->thumbnail="";
+        $this->name = "";
+        $this->description = "";
+        $this->thumbnail = "";
     }
 
     public function render()
     {
-        return view('livewire.admin.category',[
+        return view('livewire.admin.category', [
             'categories' => \App\Models\category::latest()->paginate(5)
         ])->layout('admin.layouts.wire_app');
     }
