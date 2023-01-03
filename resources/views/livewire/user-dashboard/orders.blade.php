@@ -21,7 +21,7 @@
                         <td>1</td>
                         <td>${{ $product->amount ? $product->amount : '00' }}.00</td>
                         <td><span class="label label-primary">{{ $product->order_status }}</span></td>
-                        <td><a href="{{ route('single_product',$product->id) }}" class="btn btn-default">View</a></td>
+                        <td><a href="{{ route('show_single_product',$product->id) }}" class="btn btn-default">View</a></td>
                     </tr>
                     @empty
                      <h2>No Product Found!!</h2>

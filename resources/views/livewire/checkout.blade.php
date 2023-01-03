@@ -25,14 +25,14 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="user_city">City</label>
-                                    <input type="text" class="form-control" wire:model="city" id="user_city" name="city"
-                                        value="">
+                                    <input type="text" class="form-control" wire:model="city" id="user_city"
+                                        name="city" value="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="user_country">Country</label>
-                                <input type="text" class="form-control" disabled value="{{ auth()->user()->country }}"
-                                    id="user_country" placeholder="">
+                                <input type="text" class="form-control" disabled
+                                    value="{{ auth()->user()->country }}" id="user_country" placeholder="">
                             </div>
                         </form>
                     </div>
@@ -91,9 +91,11 @@
                             @forelse ($products as $product)
                                 <div class="media product-card"
                                     {{ $total_price = $total_price + $product->product->price }}>
-                                    <a class="pull-left" href="{{ route('show_single_product', $product->product->id) }}">
+                                    <a class="pull-left"
+                                        href="{{ route('show_single_product', $product->product->id) }}">
                                         <img class="media-object"
-                                            src="{{ config('app.url') . $product->product->thumbnail }}" alt="Image" />
+                                            src="{{ config('app.url') . $product->product->thumbnail }}"
+                                            alt="Image" />
                                     </a>
                                     <div class="media-body">
                                         <h4 class="media-heading"><a
@@ -132,4 +134,4 @@
         </div>
     </div>
 </div>
-</div>
+
