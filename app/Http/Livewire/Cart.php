@@ -12,12 +12,12 @@ class Cart extends Component
     {
         dd("you are here");
         cartModel::find($id)->delete();
-        $this->products = cartModel::where('user_id',auth()->id())->get();
+
     }
     public function render()
     {
         return view('livewire.cart',[
             'products' => cartModel::where('user_id',auth()->id())->get()
-        ])->layout('');
+        ]);
     }
 }

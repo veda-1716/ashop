@@ -19,6 +19,6 @@ class Orders extends Component
     {
         return view('livewire.admin.orders',[
             'orders' => orderModel::latest()->paginate(20)
-        ])->layout('admin.layouts.wire_app');
+        ]);
     }
 }

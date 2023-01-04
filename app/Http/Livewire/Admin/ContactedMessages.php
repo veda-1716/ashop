@@ -21,6 +21,6 @@ class ContactedMessages extends Component
         return view('livewire.admin.contacted-messages',[
             'clients' => contactus::where('name','LIKE','%'.$this->search.'%')
             ->latest()->paginate(50)
-        ])->layout('admin.layouts.wire_app');
+        ]);
     }
 }

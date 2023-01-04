@@ -97,6 +97,6 @@ class Faq extends Component
     {
         return view('livewire.admin.faq',[
             'faqs' => faqModel::latest()->paginate(30)
-        ])->layout('admin.layouts.wire_app');
+        ]);
     }
 }

@@ -27,17 +27,17 @@ class Checkout extends Component
             'card_expiry' => 'required',
         ]);
 
-        
+
         /*
         * Payment login goes here
         */
-        
-        
+
+
         /*
         * add product to orders table
         */
         $productsInCart = cart::where('user_id',auth()->id())->get();
-        
+
         foreach($productsInCart as $product){
             $order = order::create([
                 'user_id' => auth()->id(),
@@ -54,7 +54,7 @@ class Checkout extends Component
                 'sku' => 'sku',
                 'quantity' => '1',
             ]);
-            
+
         }
 
         /*
@@ -63,7 +63,7 @@ class Checkout extends Component
         cart::where('user_id',auth()->id())->delete();
 
         session()->flash('message', 'Order Placed Successfully.');
-        
+
         unset($this->card_number);
         unset($this->card_expiry);
         unset($this->card_cvc);
@@ -73,7 +73,7 @@ class Checkout extends Component
     public function removePrduct($id)
     {
         cart::where('id',$id)->delete();
-        return $this->products = cart::where('user_id',auth()->id())->get();
+
     }
 
     public function apply_coupon_code()

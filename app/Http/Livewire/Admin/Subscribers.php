@@ -19,6 +19,6 @@ class Subscribers extends Component
     {
         return view('livewire.admin.subscribers',[
             'subscriberss' => subscriber::latest()->paginate(50),
-        ])->layout('admin.layouts.wire_app');
+        ]);
     }
 }
