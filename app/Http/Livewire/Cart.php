@@ -18,13 +18,8 @@ class Cart extends Component
     }
     public function render()
     {
-<<<<<<< HEAD
         return view('livewire.cart',[
             'products' => cartModel::where('user_id',auth()->id())->get()
-=======
-        return view('livewire.cart', [
-            'products' => cartModel::where('user_id', auth()->id())->get()
->>>>>>> d1abcf37f7fc2828a3e0b7fd619b8a8109a03e2b
         ]);
     }
 }
