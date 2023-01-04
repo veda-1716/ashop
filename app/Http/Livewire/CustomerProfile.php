@@ -18,15 +18,13 @@ class CustomerProfile extends Component
     public function UpdatedPhoto()
     {
         $current_user = user::find(auth()->id());
-        if ($current_user->photo) 
-        {
+        if ($current_user->photo) {
             unlink($current_user->photo);
         }
         $current_user->photo = $this->storeImage($this->photo);
         $current_user->save();
         unset($this->photo);
         session()->flash('message', 'Profile Update successfully. Prefresh Page.');
-
     }
 
     public function storeImage($photo)
@@ -37,7 +35,7 @@ class CustomerProfile extends Component
         $image   = ImageManagerStatic::make($photo)->encode('jpg');
         $name  = Str::random() . '.jpg';
         Storage::disk('public')->put($name, $image);
-        return 'storage/'.$name;
+        return 'storage/' . $name;
     }
 
 

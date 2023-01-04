@@ -42,11 +42,11 @@ class adminHelperController extends Controller
             $fileName = $fileName.'_'.time().'.'.$extension;
             $request->file('upload')->move(public_path('images'), $fileName);
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('images/'.$fileName); 
-            $msg = 'Image successfully uploaded'; 
+            $url = asset('images/'.$fileName);
+            $msg = 'Image successfully uploaded';
             $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
-               
-            @header('Content-type: text/html; charset=utf-8'); 
+
+            @header('Content-type: text/html; charset=utf-8');
             echo $response;
         }
     }
