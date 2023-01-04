@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="product-content">
-                <h4><a href="{{ route('single_product', $trende->product_id) }}">{{ $trende->product->name }}</a></h4>
+                <h4><a href="{{ route('show_single_product', $trende->product_id) }}">{{ $trende->product->name }}</a></h4>
                 <p class="price">${{ $trende->product->price }}</p>
             </div>
         </div>

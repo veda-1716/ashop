@@ -137,6 +137,6 @@ class Category extends Component
     {
         return view('livewire.admin.category',[
             'categories' => \App\Models\category::latest()->paginate(5)
-        ])->layout('admin.layouts.wire_app');
+        ]);
     }
 }
